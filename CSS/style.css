@@ -9,12 +9,10 @@
 
 main {
   display: flex;
-  width: 1599px;
-  height: 500px;
   gap: 0px;
   opacity: 0px;
-  width: 1599px;
-  height: 4514px;
+  max-width: 1599px;
+  max-height: 4514px;
   flex-direction: column;
 }
 
@@ -27,18 +25,18 @@ header {
 
 .header_menu {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   height: 142px;
-  margin-top: 30px;
-  margin-left: 200px;
-  margin-right: 199px;
-  gap: 0px;
+  padding-top: 30px;
+  margin: auto;
+  gap: 300px;
   opacity: 0px;
+  justify-content: space-between;
 }
 
 .header_picture {
   display: flex;
-  width: 1599px;
+  max-width: 1599px;
   height: 500px;
   margin-top: 28px;
   gap: 0px;
@@ -63,7 +61,6 @@ header {
   width: 582px;
   height: 27px;
   margin-top: 57px;
-  margin-left: 308.38px;
   gap: 65px;
   justify-content: space-around;
   align-items: center;
@@ -85,7 +82,7 @@ header {
   width: 180px;
   height: 29px;
   margin-top: 56px;
-  margin-left: 124.62px;
+
   gap: 100px;
   opacity: 0px;
   justify-content: space-between;
@@ -156,16 +153,19 @@ header {
   flex-direction: column;
   width: 100%;
   height: 1000px;
+  align-items: center;
+  margin-top: 75px;
+  justify-content: space-around;
 }
+
 .citation {
   display: flex;
-  width: 704px;
+  max-width: 704px;
   height: 96px;
-  margin-top: 150px;
-  margin-left: 448px;
   gap: 0px;
   opacity: 0px;
 }
+
 .citation_text {
   font-family: Cormorant;
   font-size: 40px;
@@ -179,13 +179,12 @@ header {
 .teas {
   display: flex;
   width: 1200px;
-  height: 355px;
-  margin-top: 150px;
-  margin-left: 200px;
+  max-height: 355px;
   gap: 0px;
   opacity: 0px;
   flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 75px;
 }
 
 .teas_text {
@@ -228,28 +227,29 @@ header {
 }
 
 .tea_pic {
-  width: 208px;
-  height: 208px;
+  max-width: 208px;
+  max-height: 208px;
   gap: 0px;
   opacity: 0px;
 }
 
 .testimonials {
   display: flex;
-  width: 1600px;
+  width: 100%;
   height: 397px;
   gap: 0px;
   opacity: 0.5px;
   background: #f7f2ea;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .testimonials_text {
   display: flex;
-  width: 329px;
+  max-width: 329px;
   height: 48px;
   margin-top: 60px;
-  margin-left: 641px;
   gap: 0px;
   opacity: 0px;
   font-family: Cormorant;
@@ -262,12 +262,11 @@ header {
 .testi {
   display: flex;
   flex-direction: row;
-  width: 1198px;
+  max-width: 1198px;
   height: 169px;
-  margin-top: 60px;
-  margin-left: 200px;
   opacity: 0px;
   justify-content: space-around;
+  margin-bottom: 60px;
 }
 
 .testi_ul {
@@ -277,7 +276,7 @@ header {
 }
 
 .testi_li {
-  width: 280px;
+  max-width: 280px;
   height: 169px;
   opacity: 0px;
   flex-direction: column;
@@ -301,5 +300,106 @@ header {
   font-weight: 600;
   line-height: 27.24px;
   text-align: left;
+  color: #151618;
+}
+
+.blog {
+  display: flex;
+  max-width: 1142px;
+  height: 619px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  left: 200px;
+  gap: 60px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.blog_text {
+  display: flex;
+  max-width: 208px;
+  height: 48px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Cormorant;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.44px;
+  text-align: left;
+}
+
+.blog_article {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.article_1 {
+  display: flex;
+  flex-direction: row;
+  max-width: 542px;
+  height: 180px;
+  gap: 20px;
+  opacity: 0px;
+  justify-content: space-between;
+}
+
+.article_1_pic {
+  width: 270px;
+  height: 180px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.blog_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.article_text_1 {
+  font-family: Cormorant;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.06px;
+  text-align: left;
+  width: 252px;
+  height: 86px;
+  gap: 0px;
+  opacity: 0px;
+  color: #151618;
+}
+
+.article_text_2 {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17.7px;
+  text-align: left;
+  width: 169px;
+  height: 18px;
+  gap: 0px;
+  opacity: 0px;
+  margin-top: 10px;
+  color: #151618;
+}
+
+.article_read {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17.7px;
+  text-align: left;
+  width: 43px;
+  height: 18px;
+  gap: 0px;
+  opacity: 0px;
   color: #151618;
 }
