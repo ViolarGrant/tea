@@ -482,13 +482,26 @@ header {
   height: 117px;
   margin-top: 198px;
   margin-left: 40px;
+  flex-direction: column;
+}
+
+.sub_form_1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.sub_form_2 {
+  display: flex;
+  width: 100%;
+  height: 50%;
 }
 
 .sub_input {
-  width: 161px;
+  width: 439px;
   height: 30px;
   margin-top: 18px;
-  margin-left: 15px;
+  margin-right: auto;
   color: #b8b58b;
   font-family: Open Sans;
   font-size: 20px;
@@ -497,13 +510,13 @@ header {
   text-align: left;
   background: transparent;
   border: 0px;
+  border-bottom: 1px solid #b8b58b;
 }
 
 .sub_btn {
   display: flex;
   width: 116px;
   height: 51px;
-  margin-left: 288px;
   gap: 10px;
   border: 1px solid black;
   opacity: 0px;
@@ -529,18 +542,15 @@ header {
 .sub_checkbox {
   width: 10px;
   height: 10px;
-  margin-top: 60px;
-  margin-left: -220px;
-  border: 1px 0px 0px 0px;
   border: 1px solid #151618;
   color: #ffffff;
+  margin-top: 15.96px;
 }
 
 .checkbox_text {
   display: flex;
   width: 560px;
   height: 54px;
-  margin-top: 57px;
   margin-left: 10px;
   font-family: Open Sans;
   font-size: 13px;
@@ -548,6 +558,7 @@ header {
   line-height: 17.7px;
   text-align: left;
   color: #151618;
+  margin-top: 11.96px;
 }
 
 .prioritise {
@@ -642,6 +653,7 @@ header {
   height: 593px;
   background-color: #f7f2ea;
   margin-top: 150px;
+  flex-direction: column;
 }
 
 .footer_info {
@@ -744,4 +756,171 @@ header {
   line-height: 16.34px;
   text-align: left;
   color: #151618;
+}
+
+.contacts {
+  display: flex;
+  width: 270px;
+  height: 287px;
+  margin-left: 41px;
+  flex-direction: column;
+}
+
+.contacts_text_1 {
+  display: flex;
+  width: 131px;
+  height: 29px;
+  margin-top: 0px;
+  font-family: Cormorant;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.06px;
+  text-align: left;
+  color: #151618;
+}
+
+.contacts_text_2 {
+  display: flex;
+  width: 270px;
+  height: 36px;
+  margin-top: 50px;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17.7px;
+  text-align: left;
+  color: #151618;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 91px;
+  margin-top: 20px;
+}
+
+.cont_logo_pic {
+  display: flex;
+  width: 57px;
+  height: 91px;
+}
+
+.cont_number {
+  display: flex;
+  width: 136px;
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 40px;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.number {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 18px;
+  gap: 10px;
+}
+
+.number_pic {
+  width: 20.81px;
+  height: 20.81px;
+}
+
+.number_input {
+  background: transparent;
+  width: 104px;
+  height: 18px;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17.7px;
+  text-align: left;
+  color: #151618;
+  border: 0px;
+}
+
+.email {
+  width: 100%;
+  height: 20.81px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.email_pic {
+  width: 22px;
+  height: 16px;
+}
+
+.email_input {
+  background: transparent;
+  width: 105px;
+  height: 18px;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17.7px;
+  text-align: left;
+  color: #151618;
+  border: 0px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  height: 22px;
+  margin-top: 39px;
+  margin-left: 97px;
+  gap: 20px;
+}
+
+.icon {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 466px;
+  height: 22px;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-bottom: 18px;
+}
+
+.other_text {
+  width: 118px;
+  height: 22px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21.79px;
+  text-align: left;
+  color: #151618;
+}
+
+.footer_pay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 156px;
+  height: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.pay {
+  display: flex;
+  width: 26px;
+  height: 20px;
+  align-items: center;
 }
