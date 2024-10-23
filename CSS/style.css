@@ -7,6 +7,12 @@
   font-family: normal;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+}
+
 main {
   display: flex;
   gap: 0px;
@@ -30,7 +36,7 @@ header {
   height: 142px;
   padding-top: 30px;
   margin: auto;
-  gap: 300px;
+  gap: 250px;
   opacity: 0px;
   justify-content: space-between;
 }
@@ -78,6 +84,11 @@ header {
   width: 50px;
   height: 27px;
   padding: 0px 5px 2px 0px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  text-align: left;
 }
 
 .account {
@@ -85,10 +96,8 @@ header {
   width: 180px;
   height: 29px;
   margin-top: 56px;
-
   gap: 100px;
-  opacity: 0px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .acc {
@@ -109,6 +118,13 @@ header {
   height: 22px;
   gap: 0px;
   opacity: 0px;
+}
+
+.search {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  margin-left: 100px;
 }
 
 .search_pic {
@@ -158,15 +174,13 @@ header {
   height: 1000px;
   align-items: center;
   margin-top: 75px;
-  justify-content: space-around;
 }
 
 .citation {
   display: flex;
   max-width: 704px;
   height: 96px;
-  gap: 0px;
-  opacity: 0px;
+  margin-top: 150px;
 }
 
 .citation_text {
@@ -183,20 +197,17 @@ header {
   display: flex;
   width: 1200px;
   max-height: 355px;
-  gap: 0px;
-  opacity: 0px;
   flex-direction: column;
   justify-content: space-around;
-  padding-bottom: 75px;
+  margin-bottom: 150px;
+  margin-top: 150px;
+  align-items: center;
 }
 
 .teas_text {
   display: flex;
   width: 369px;
   height: 48px;
-  margin-left: 421px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Cormorant;
   font-size: 40px;
   font-weight: 400;
@@ -217,9 +228,14 @@ header {
 
 .teas_ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .teas_li {
+  display: flex;
+  flex-direction: column;
   font-family: Cormorant;
   font-size: 24px;
   font-weight: 400;
@@ -227,6 +243,9 @@ header {
   text-align: left;
   color: #000000;
   text-align: center;
+  width: 208px;
+  height: 247px;
+  gap: 10px;
 }
 
 .tea_pic {
@@ -313,7 +332,6 @@ header {
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  left: 200px;
   gap: 60px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
@@ -353,7 +371,7 @@ header {
 }
 
 .article_1_pic {
-  width: 270px;
+  max-width: 270px;
   height: 180px;
   gap: 0px;
   opacity: 0px;
@@ -367,6 +385,8 @@ header {
 }
 
 .article_text_1 {
+  display: flex;
+  width: 252px;
   font-family: Cormorant;
   font-size: 24px;
   font-weight: 400;
@@ -923,4 +943,309 @@ header {
   width: 26px;
   height: 20px;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+  }
+  main {
+    display: flex;
+    gap: 0px;
+    opacity: 0px;
+    max-width: 1000px;
+    max-height: 4454px;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 665px;
+    width: 100%;
+  }
+  .header_menu {
+    display: flex;
+    max-width: 960px;
+    height: 105px;
+    gap: 75px;
+    margin: 30px 20px 0 20px;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+  .header_picture {
+    display: flex;
+    max-width: 1000px;
+    height: 500px;
+    margin-top: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 40.1%, #000000 97.4%),
+      url(/img/background_1000\ .png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  .logo {
+    display: flex;
+    width: 73.2px;
+    height: 105px;
+  }
+  .nav_menu {
+    display: flex;
+    width: 582px;
+    height: 27px;
+    margin-top: 39px;
+    gap: 65px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_ul {
+    list-style-type: none;
+  }
+
+  .nav_a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    width: 57px;
+    height: 27px;
+    padding: 0px 5px 2px 0px;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.51px;
+    text-align: left;
+  }
+  .account {
+    display: flex;
+    width: 130px;
+    height: 29px;
+    margin-top: 38px;
+    gap: 50px;
+    justify-content: flex-start;
+  }
+  .acc {
+    display: flex;
+    flex-direction: row;
+    width: 58px;
+    height: 29px;
+    gap: 20px;
+  }
+  .search {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    margin-left: 0px;
+  }
+  .header_text {
+    display: flex;
+    margin: 254px 609.62px 48px 18.87px;
+    width: 789.51px;
+    height: 120px;
+    opacity: 0px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .citation {
+    display: flex;
+    max-width: 744px;
+    height: 111px;
+    margin-top: 120px;
+  }
+  .teas {
+    display: flex;
+    width: 960px;
+    max-height: 325px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    align-items: center;
+  }
+  .teas_text {
+    display: flex;
+    width: 369px;
+    height: 48px;
+    font-family: Cormorant;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48.44px;
+    text-align: left;
+  }
+  .teas_pic {
+    display: flex;
+    width: 960px;
+    height: 247px;
+    margin-top: 30px;
+    gap: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .teas_li {
+    display: flex;
+    flex-direction: column;
+    font-family: Cormorant;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.06px;
+    text-align: left;
+    color: #000000;
+    text-align: center;
+    width: 208px;
+    height: 247px;
+    gap: 0px;
+  }
+  .teas_li:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-30px);
+  }
+  .teas_li:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-40px);
+  }
+  .teas_li:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-55px);
+  }
+  .teas_li:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-65px);
+  }
+  .tea_pic {
+    display: flex;
+    max-width: 208px;
+    max-height: 208px;
+    gap: 0px;
+  }
+  .teas_ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .testimonials {
+    display: flex;
+    width: 100%;
+    height: 397px;
+    gap: 0px;
+    opacity: 0.5px;
+    background: #f7f2ea;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .testi {
+    display: flex;
+    flex-direction: row;
+    max-width: 892px;
+    height: 169px;
+    opacity: 0px;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  .testi_li {
+    max-width: 280px;
+    height: 169px;
+    opacity: 0px;
+    flex-direction: column;
+  }
+  .testi_li:last-child {
+    display: none;
+    max-width: 280px;
+    height: 169px;
+    opacity: 0px;
+    flex-direction: column;
+  }
+  .blog {
+    display: flex;
+    max-width: 940px;
+    height: 592px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    left: 200px;
+    gap: 60px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .blog_article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+    justify-content: ;
+  }
+  .article_1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 460px;
+    height: 153px;
+    row-gap: 20px;
+    opacity: 0px;
+    justify-content: flex-start;
+  }
+  .article_1_pic {
+    width: 230px;
+    height: 153px;
+  }
+  .blog_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    height: 150px;
+  }
+  .article_text_1 {
+    display: flex;
+    width: 210px;
+    height: 86px;
+    font-family: Cormorant;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.06px;
+    text-align: left;
+    color: #151618;
+  }
+  .article_text_2 {
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17.7px;
+    text-align: left;
+    width: 118px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 10px;
+    color: #151618;
+  }
+  .article_read {
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17.7px;
+    text-align: left;
+    width: 43px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    color: #151618;
+    margin-top: 21px;
+  }
 }
