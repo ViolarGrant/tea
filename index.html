@@ -10,6 +10,10 @@
     <main>
       <header>
         <div class="header_menu">
+          <button onclick="toggleBurger()" id="burg" class="burger">
+            <img id="burgerPic" class="burger_pic" src="./img/burger.svg" alt="burger">
+          </button>
+          
           <div class="logo">
             <a href="#"><img src="./img/logo.svg" alt="Logo" /></a>
           </div>
@@ -117,7 +121,7 @@
           Our Tea Blog
         </p>
         <div class="blog_article">
-          <div class="article_1">
+        <div class="article_1">
           <img class="article_1_pic" src="./img/article_1.png" alt="article_1">
           <div class="blog_div">
             <span>
@@ -127,35 +131,38 @@
             <a class="article_read" href="#">Read <img class="right" src="./img/стрелка вправо.svg" alt=">"></a>
           </div>
         </div>
-        <div class="article_1">
+        <div class="article_1 article_2">
           <img class="article_1_pic" src="./img/article_2.png" alt="article_2">
           <div class="blog_div">
           <span>
             <p class="article_text_1">The Role of Tea in Mental Health
             </p>
             <p class="article_text_2">by Joker</p>
-            <a class="article_read" href="#">Read <img class="right"  src="./img/стрелка вправо.svg" alt=">"></a>
           </span>
+            <a class="article_read" href="#">Read <img class="right"  src="./img/стрелка вправо.svg" alt=">"></a>
+          
         </div>
-      </div>
+        </div>
         <div class="article_1">
           <img class="article_1_pic" src="./img/article_3.png" alt="article_3">
           <div class="blog_div">
           <span>
             <p class="article_text_1">Tea-rific Tales: Hilarious Stories from Tea Lovers</p>
             <p class="article_text_2">by Casper the Friendly Ghost</p>
-            <a class="article_read" href="#">Read <img class="right"  src="./img/стрелка вправо.svg" alt=">"></a>
           </span>
+            <a class="article_read" href="#">Read <img class="right"  src="./img/стрелка вправо.svg" alt=">"></a>
+          
         </div>
       </div>
-        <div class="article_1">
+        <div class="article_1 article_4">
           <img class="article_1_pic" src="./img/article_4.png" alt="article_4">
           <div class="blog_div">
           <span>
             <p class="article_text_1">Tea and Caffeine: Effects on the Brain and Behavior</p>
             <p class="article_text_2">by Author Authorius</p>
-            <a class="article_read" href="#">Read <img class="right"   src="./img/стрелка вправо.svg" alt=">"></a>
           </span>
+            <a class="article_read" href="#">Read <img class="right"   src="./img/стрелка вправо.svg" alt=">"></a>
+         
         </div>
         </div>
       </div>  
@@ -215,6 +222,47 @@
         </div>
       </section>
     </main>
+    <div id="burger_menu" class="burger_menu">
+      <button class="hidden" onclick="hiddenMenu()" id="hidden_menu">
+        <img src="./img/hidden_menu.svg" alt="">
+      </button>
+      <div class="b_menu">
+        <ul class="b_menu_ul">
+          <li class="b_menu_li"><a class="b_a" href="#">
+            Black
+          </a></li>
+          <li class="b_menu_li"><a class="b_a"  href="#">
+            Green
+          </a></li>
+          <li class="b_menu_li"><a class="b_a"  href="#">
+            White
+          </a></li>
+          <li class="b_menu_li"><a class="b_a"  href="#">
+            Oolong
+          </a></li>
+          <li class="b_menu_li"><a class="b_a"  href="#">
+            Pu-erh
+          </a></li>
+        </ul>
+      </div>
+      <div class="b_pic">
+        <img class="b_img" src="./img/b_line.svg" alt="line">
+      </div>
+      <div class="b_contacts">
+        <a class="b_cont_a" href="#">
+          Contact Us
+        </a><a class="b_cont_a" href="#">
+          Our Blog
+        </a><a class="b_cont_a" href="#">
+          Shipping and Delivery
+        </a>
+      </div>
+      <div class="b_bag_acc_search">
+        <div class="b_bag_a">
+        <a href="#"><img src="./img/mag.svg" alt=""></a><a href="#"><img src="./img/acc.svg" alt=""></a><a href="#"><img src="./img/search.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
 <div class="footer_info">
   <div class="footer_menu">
@@ -289,5 +337,7 @@
   </div>
 </div>
     </footer>
+    
+    <script src="./JS/script.js"></script>
   </body>
 </html>
