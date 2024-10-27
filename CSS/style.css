@@ -966,6 +966,9 @@ header {
 .burger {
   display: none;
 }
+.burger_menu{
+  display: none;
+}
 
 @media (max-width: 1200px){
   .header_menu {
@@ -1029,10 +1032,16 @@ header {
     height: 22px;
     margin-left: 0px;
   }
+  .burger_menu{
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
   .burger {
+    display: none;
+  }
+  .burger_menu{
     display: none;
   }
   body {
