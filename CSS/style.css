@@ -21,6 +21,7 @@ main {
   max-height: 4514px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -198,8 +199,10 @@ header {
 
 .teas {
   display: flex;
-  width: 1200px;
-  max-height: 355px;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 355px;
+  height: 100%;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 150px;
@@ -220,7 +223,8 @@ header {
 
 .teas_pic {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   height: 247px;
   margin-top: 60px;
   gap: 40px;
@@ -288,7 +292,7 @@ header {
 .testi {
   display: flex;
   flex-direction: row;
-  max-width: 1198px;
+  max-width: 1100px;
   height: 169px;
   opacity: 0px;
   justify-content: space-around;
@@ -390,13 +394,13 @@ header {
 
 .article_text_1 {
   display: flex;
-  width: 252px;
+  max-width: 252px;
+  width: 100%;
   font-family: Cormorant;
   font-size: 24px;
   font-weight: 400;
   line-height: 29.06px;
   text-align: left;
-  width: 252px;
   height: 86px;
   gap: 0px;
   opacity: 0px;
@@ -686,7 +690,8 @@ header {
 .footer {
   display: flex;
   max-width: 1600px;
-  height: 593px;
+  min-height: 593px;
+  max-height: 100%;
   background-color: #f7f2ea;
   margin-top: 150px;
   flex-direction: column;
@@ -696,7 +701,8 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1600px;
+  max-width: 1600px;
+  width: 100%;
   height: 400px;
   margin-top: 100px;
 }
@@ -1167,7 +1173,7 @@ header {
   }
   .header_text {
     display: flex;
-    margin: 254px 609.62px 48px 18.87px;
+    margin: 254px 0px 48px 18.87px;
     width: 789.51px;
     height: 120px;
     opacity: 0px;
@@ -1190,8 +1196,10 @@ header {
   }
   .teas {
     display: flex;
-    width: 960px;
-    max-height: 325px;
+    max-width: 960px;
+    width: 100%;
+    min-height: 325px;
+    height: 100%;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 120px;
@@ -1210,8 +1218,10 @@ header {
   }
   .teas_pic {
     display: flex;
-    width: 960px;
-    height: 247px;
+    max-width: 960px;
+    width: 100%;
+    min-height: 247px;
+    height: 100%;
     margin-top: 30px;
     gap: 0px;
     flex-direction: row;
@@ -1262,6 +1272,8 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
     justify-content: center;
     margin-left: 20px;
   }
@@ -1520,7 +1532,8 @@ header {
   .footer {
     display: flex;
     max-width: 1000px;
-    height: 593px;
+    min-height: 593px;
+    height: 100%;
     background-color: #f7f2ea;
     margin-top: 120px;
     flex-direction: column;
@@ -1528,9 +1541,9 @@ header {
   .footer_info {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
-    height: 400px;
+    height: 100%;
     margin-top: 100px;
   }
   .footer_menu {
@@ -1736,7 +1749,7 @@ header {
   }
   .teas_pic {
     display: flex;
-    width: 960px;
+    width: 768px;
     height: 100%;
     margin-top: 30px;
     gap: 0px;
@@ -3098,7 +3111,8 @@ header {
   }
   .teas {
     display: flex;
-    width: 386px;
+    max-width: 386px;
+    width: 100%;
     max-height: 770px;
     height: 770px;
     flex-direction: column;
@@ -3119,7 +3133,8 @@ header {
   }
   .teas_pic {
     display: flex;
-    width: 386px;
+    max-width: 386px;
+    width: 100%;
     height: 100%;
     margin-top: 0px;
     gap: 0px;
@@ -3127,10 +3142,12 @@ header {
     justify-content: space-around;
   }
   .teas_ul {
+    transform: translateX(-25px);
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    width: 386px;
+    max-width: 386px;
+    width: 100%;
     height: 700px;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -3504,6 +3521,7 @@ header {
   .footer {
     display: flex;
     max-width: 360px;
+    width: 100%;
     height: 897px;
     background-color: #f7f2ea;
     margin-top: 0px;
